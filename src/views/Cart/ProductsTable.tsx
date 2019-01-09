@@ -95,6 +95,7 @@ const ProductsTable: React.SFC<{
                           disabled={processing}
                           value={line.quantity}
                           type="number"
+                          max={999999999}
                         />
                       )}
                     </td>

@@ -97,8 +97,7 @@ export default class CartProvider extends React.Component<
       });
       apiError = !!errors.length;
       if (apiError) {
-        // TODO Add notificaton after https://github.com/mirumee/saleor/pull/3563 will be resolved
-        this.setState({ loading: false });
+        this.setState({ loading: false, errors });
       }
     }
 
